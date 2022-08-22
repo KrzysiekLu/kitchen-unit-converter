@@ -1,0 +1,106 @@
+:root {
+  --main-font: "Josefin Sans", sans-serif;
+  --font-color: rgb(70, 32, 11);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
+
+body {
+  height: 100vh;
+  background-image: url(../images/bg-img2.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--main-font);
+  letter-spacing: 0.3rem;
+  line-height: 2.5rem;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255, 252, 252, 0.669);
+  border-radius: 1rem;
+  padding: 1rem;
+  .main-title {
+    color: var(--font-color);
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 3px solid var(--font-color);
+    padding-bottom: 1rem;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 1rem;
+
+    label {
+      color: var(--font-color);
+    }
+    .input {
+      border: none;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      border: var(--font-color) 2px solid;
+    }
+    .input-entry {
+      flex-grow: 1;
+      display: flex;
+      &__amount {
+        max-width: 30%;
+        text-align: center;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .converte-button {
+    margin-top: 2rem;
+    border: 2px solid var(--font-color);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    padding: 1rem 3rem 0.6rem 3rem;
+    border-radius: 1rem;
+    background: none;
+    letter-spacing: 0.3rem;
+    width: 70%;
+    margin: 2rem auto;
+    color: var(--font-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1rem;
+    background-color: white;
+
+    &:hover {
+      background-color: var(--font-color);
+      border-color: white;
+      color: white;
+      box-shadow: 0 10px 15px 2px var(--font-color);
+    }
+  }
+  .output {
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    &__entry-unit,
+    &__entry-amount,
+    &__target-unit,
+    &__target-amount {
+      font-weight: 800;
+    }
+  }
+}

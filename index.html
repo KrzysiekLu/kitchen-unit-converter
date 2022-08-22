@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./dist/app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">kitchen unit converter</h1>
+      <section class="inputs">
+        <label for="input-ingredient">Ingredient</label>
+
+        <select
+          id="input-ingredient_name"
+          class="input input-ingredient"
+          type="text"
+        >
+          <option value="flour">Choose ingredient</option>
+          <option value="flour">Flour</option>
+          <option value="sugar">Sugar</option>
+        </select>
+
+        <label for="input-entry">From:</label>
+        <div class="input-entry">
+          <input type="number" class="input-entry__amount input" />
+          <select
+            id="input-entry__name"
+            class="input input-entry"
+            list="entry-options"
+          >
+            <option value="flour">Choose starter unit</option>
+            <option value="tea spoon">tea spoon</option>
+            <option value="table spoon">table spoon</option>
+            <option value="glass">glass</option>
+            <option value="kg">kg</option>
+            <option value="g">g</option>
+            <option value="ml">m</option>
+            <option value="l">l</option>
+          </select>
+        </div>
+
+        <label for="input-target">To:</label>
+        <select
+          id="input-target"
+          class="input input-target"
+          list="entry-options"
+        >
+          <option value="tea spoon">Choose output unit</option>
+          <option value="tea spoon">tea spoon</option>
+          <option value="table spoon">table spoon</option>
+          <option value="glass">glass</option>
+          <option value="kg">kg</option>
+          <option value="g">g</option>
+          <option value="ml">m</option>
+          <option value="l">l</option>
+        </select>
+      </section>
+      <button class="converte-button">Convert</button>
+      <section class="output">
+        <p>
+          <span class="output__entry-amount">1</span>
+          <span class="output__entry-unit">table spoon</span> of
+          <span class="output__target-name">flour</span> is
+        </p>
+        <p>
+          <span class="output__target-amount">15</span>
+          <span class="output__target-unit">grams</span>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
