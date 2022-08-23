@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.78cc32dd.css">
+    <script src="/index.5baa4167.js" defer=""></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">kitchen unit converter</h1>
+      <section class="inputs">
+        <label for="input-ingredient">Ingredient</label>
+
+        <input id="input-ingredient_name" class="input input-ingredient" type="text" list="ingredients-list" placeholder="Chose ingredient">
+        <datalist id="ingredients-list"> </datalist>
+
+        <label for="input-entry">From:</label>
+        <div class="input-entry">
+          <input type="number" class="input-entry__amount input">
+          <input id="input-entry__unit" class="input input-entry__unit" list="units" placeholder="Choose starter unit">
+          <datalist id="units">
+            <option value="grams">grams</option>
+            <option value="oz">oz</option>
+            <option value="lbs">lbs</option>
+            <option value="mililiters">mililiters</option>
+            <option value="cups">cups</option>
+            <option value="teaspoons">teaspoons</option>
+            <option value="tablespoons">tablespoons</option>
+            <option value="fl_oz">fl_oz</option>
+            <option value="liters">liters</option>
+            <option value="quarts">quarts</option>
+            <option value="pints">pints</option>
+          </datalist>
+        </div>
+
+        <label for="input-target">To:</label>
+        <input id="input-target" class="input input-target" list="units" placeholder="Choose target unit">
+      </section>
+      <button class="converte-button">Convert</button>
+      <section class="output">
+        <p>
+          <span class="output__entry-amount">1</span>
+          <span class="output__entry-unit">table spoon</span> of
+          <span class="output__target-name">flour</span> is
+        </p>
+        <p>
+          <span class="output__target-amount">15</span>
+          <span class="output__target-unit">grams</span>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

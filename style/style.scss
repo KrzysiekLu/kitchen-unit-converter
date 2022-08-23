@@ -53,12 +53,14 @@ body {
       border: var(--font-color) 2px solid;
     }
     .input-entry {
-      flex-grow: 1;
       display: flex;
       &__amount {
         max-width: 30%;
         text-align: center;
         margin-right: 1rem;
+      }
+      &__unit {
+        width: 100%;
       }
     }
   }

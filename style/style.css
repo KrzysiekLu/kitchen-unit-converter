@@ -54,13 +54,15 @@ body {
   border: var(--font-color) 2px solid;
 }
 .container .inputs .input-entry {
-  flex-grow: 1;
   display: flex;
 }
 .container .inputs .input-entry__amount {
   max-width: 30%;
   text-align: center;
   margin-right: 1rem;
+}
+.container .inputs .input-entry__unit {
+  width: 100%;
 }
 .container .converte-button {
   margin-top: 2rem;

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
     "rootDir": "./dir",
-    "outDir": "./dist"
+    "outDir": "./distJS"
   }
 }

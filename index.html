@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <script src="./dist/app.js" defer></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="app.js" defer type="module"></script>
     <title>Document</title>
   </head>
   <body>
@@ -14,50 +14,46 @@
       <section class="inputs">
         <label for="input-ingredient">Ingredient</label>
 
-        <select
+        <input
           id="input-ingredient_name"
           class="input input-ingredient"
           type="text"
-        >
-          <option value="flour">Choose ingredient</option>
-          <option value="flour">Flour</option>
-          <option value="sugar">Sugar</option>
-        </select>
+          list="ingredients-list"
+          placeholder="Chose ingredient"
+        />
+        <datalist id="ingredients-list"> </datalist>
 
         <label for="input-entry">From:</label>
         <div class="input-entry">
           <input type="number" class="input-entry__amount input" />
-          <select
-            id="input-entry__name"
-            class="input input-entry"
-            list="entry-options"
-          >
-            <option value="flour">Choose starter unit</option>
-            <option value="tea spoon">tea spoon</option>
-            <option value="table spoon">table spoon</option>
-            <option value="glass">glass</option>
-            <option value="kg">kg</option>
-            <option value="g">g</option>
-            <option value="ml">m</option>
-            <option value="l">l</option>
-          </select>
+          <input
+            id="input-entry__unit"
+            class="input input-entry__unit"
+            list="units"
+            placeholder="Choose starter unit"
+          />
+          <datalist id="units">
+            <option value="grams">grams</option>
+            <option value="oz">oz</option>
+            <option value="lbs">lbs</option>
+            <option value="mililiters">mililiters</option>
+            <option value="cups">cups</option>
+            <option value="teaspoons">teaspoons</option>
+            <option value="tablespoons">tablespoons</option>
+            <option value="fl_oz">fl_oz</option>
+            <option value="liters">liters</option>
+            <option value="quarts">quarts</option>
+            <option value="pints">pints</option>
+          </datalist>
         </div>
 
         <label for="input-target">To:</label>
-        <select
+        <input
           id="input-target"
           class="input input-target"
-          list="entry-options"
-        >
-          <option value="tea spoon">Choose output unit</option>
-          <option value="tea spoon">tea spoon</option>
-          <option value="table spoon">table spoon</option>
-          <option value="glass">glass</option>
-          <option value="kg">kg</option>
-          <option value="g">g</option>
-          <option value="ml">m</option>
-          <option value="l">l</option>
-        </select>
+          list="units"
+          placeholder="Choose target unit"
+        />
       </section>
       <button class="converte-button">Convert</button>
       <section class="output">
