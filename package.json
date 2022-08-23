@@ -15,6 +15,7 @@
     "recipe-unit-converter": "^2.3.3"
   },
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "parcel": "^2.7.0",
+    "recipe-unit-converter": "^2.3.3"
   }
 }
