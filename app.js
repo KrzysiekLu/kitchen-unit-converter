@@ -48,7 +48,7 @@ const getIngredientsData = async () => {
     .then((response) => createIngredientList(response))
     .catch((err) => console.error(err));
 };
-getIngredientsData();
+// getIngredientsData();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 const options = {
