@@ -577,7 +577,7 @@ const createIngredientList = (data)=>{
 const getIngredientsData = async ()=>{
     const data = await fetch("https://food-unit-of-measurement-converter.p.rapidapi.com/ingredients", optionsIngredients).then((response)=>response.json()).then((response)=>createIngredientList(response)).catch((err)=>console.error(err));
 };
-getIngredientsData();
+// getIngredientsData();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 const options = {
     method: "GET",
